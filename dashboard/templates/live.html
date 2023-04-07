@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Food Tracker | shopping list {% endblock %}
+{% block body %}
+    <br>
+    <br>
+    <p style="text-align:center">
+    <h2>A google meet has been scheduled for you and {{name}}, 30 minutes from now.</h2>
+    <br>
+    <a href='https://www.gmail.com'>click here to open your mail to get the link</a>
+    </p>
+{% endblock %}
+
+{% block script %}
+    <!-- Page level plugins -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="{% static 'js/foodDetails.js' %}"></script>
+{% endblock %}
+
